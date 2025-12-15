@@ -66,7 +66,6 @@
                     app:trackThickness="14dp"
                     app:min="0"
                     app:thumbColor="#FF5722"
-                    app:thumbRadius="26dp"
                     app:max="100"
                     app:step="5"
                     app:showBubble="false"/>
@@ -120,7 +119,6 @@
                     app:trackThickness="14dp"
                     app:min="0"
                     app:thumbColor="#4CAF50"
-                    app:thumbRadius="26dp"
                     app:max="100"
                     app:isVertical="true"
                     app:showBubble="false"/>
@@ -177,7 +175,6 @@
                     app:max="100"
                     app:step="20"
                     app:thumbColor="#FFC107"
-                    app:thumbRadius="26dp"
                     app:emojiMode="true"
                     app:emojiLow="😞"
                     app:emojiMid="😐"
@@ -291,7 +288,6 @@
                     app:progressColor="#03A9F4"
                     app:trackThickness="14dp"
                     app:thumbColor="#03A9F4"
-                    app:thumbRadius="26dp"
                     app:showTicks="true"
                     app:tickColor="#03A9F4"
                     app:tickRadius="5dp"
