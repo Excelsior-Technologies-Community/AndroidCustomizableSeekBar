@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:padding="16dp"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="40dp">
+
+        <!-- 1. Rounded SeekBar with Gradient -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rounded SeekBar"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#FF5722"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smooth edges with gradient colors"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:paddingBottom="16dp"/>
+
+                <com.ext.advance_seekbar.AdvancedSeekBar
+                    android:id="@+id/roundedSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    app:trackColor="#E0E0E0"
+                    app:progressColor="#FF5722"
+                    app:progressColorEnd="#FF9800"
+                    app:trackThickness="14dp"
+                    app:min="0"
+                    app:thumbColor="#FF5722"
+                    app:thumbRadius="26dp"
+                    app:max="100"
+                    app:step="5"
+                    app:showBubble="false"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 2. Vertical SeekBar -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vertical SeekBar"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#4CAF50"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rotate easily with RTL support"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:paddingBottom="16dp"/>
+
+                <com.ext.advance_seekbar.AdvancedSeekBar
+                    android:id="@+id/verticalSeekBar"
+                    android:layout_width="100dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    app:trackColor="#E0E0E0"
+                    app:progressColor="#4CAF50"
+                    app:trackThickness="14dp"
+                    app:min="0"
+                    app:thumbColor="#4CAF50"
+                    app:thumbRadius="26dp"
+                    app:max="100"
+                    app:isVertical="true"
+                    app:showBubble="false"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 3. Emoji SeekBar -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emoji SeekBar"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#FFC107"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thumb changes based on value 😊😐😠"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:paddingBottom="20dp"/>
+
+                <com.ext.advance_seekbar.AdvancedSeekBar
+                    android:id="@+id/emojiSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    app:trackColor="#E0E0E0"
+                    app:progressColor="#FFC107"
+                    app:trackThickness="14dp"
+                    app:min="0"
+                    app:max="100"
+                    app:step="20"
+                    app:thumbColor="#FFC107"
+                    app:thumbRadius="26dp"
+                    app:emojiMode="true"
+                    app:emojiLow="😞"
+                    app:emojiMid="😐"
+                    app:emojiHigh="😄"
+                    app:emojiTextSize="20sp"
+                    app:showBubble="false"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 4. Icon SeekBar -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:padding="20dp">
+
+                <com.ext.advance_seekbar.AdvancedSeekBar
+                    android:id="@+id/iconSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:paddingStart="40dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="40dp"
+                    android:paddingBottom="20dp"
+                    app:max="100"
+                    app:min="0"
+                    app:progressColor="#9C27B0"
+                    app:showBubble="false"
+                    app:step="5"
+                    app:thumbWidth="30dp"
+                    app:thumbHeight="30dp"
+                    app:thumbIcon="@drawable/ic_thumb"
+                    app:trackColor="#E0E0E0"
+                    app:trackThickness="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Icon SeekBar"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#9C27B0"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Use any icon as the seekbar thumb"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:paddingBottom="16dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 5. Tick Mark SeekBar -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tick Mark SeekBar"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#03A9F4"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dots, stages, and step indicators"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:paddingBottom="16dp"/>
+
+                <com.ext.advance_seekbar.AdvancedSeekBar
+                    android:id="@+id/tickSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    app:trackColor="#E0E0E0"
+                    app:progressColor="#03A9F4"
+                    app:trackThickness="14dp"
+                    app:thumbColor="#03A9F4"
+                    app:thumbRadius="26dp"
+                    app:showTicks="true"
+                    app:tickColor="#03A9F4"
+                    app:tickRadius="5dp"
+                    app:min="0"
+                    app:max="100"
+                    app:step="10"
+                    app:showBubble="false"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 6. Range SeekBar (Dual Thumb) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Range SeekBar"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#009688"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dual-thumb slider for range selection"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:paddingBottom="20dp"/>
+
+                <com.ext.advance_seekbar.RangeSeekBar
+                    android:id="@+id/rangeSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    app:rsb_min="0"
+                    app:rsb_max="100"
+                    app:rsb_leftProgress="20"
+                    app:rsb_rightProgress="80"
+                    app:rsb_trackColor="#E0E0E0"
+                    app:rsb_progressColor="#009688"
+                    app:rsb_progressColorEnd="#4DB6AC"
+                    app:rsb_thumbColor="#009688"
+
+                    app:rsb_showBubble="true"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 7. Read-only SeekBar -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read-only SeekBar"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#E91E63"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="For preview-only progress display"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:paddingBottom="16dp"/>
+
+                <com.ext.advance_seekbar.AdvancedSeekBar
+                    android:id="@+id/readOnlySeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    app:trackColor="#E0E0E0"
+                    app:progressColor="#E91E63"
+                    app:trackThickness="9dp"
+                    app:min="0"
+                    app:thumbColor="#E91E63"
+                    app:max="100"
+                    app:readOnly="true"
+                    app:showBubble="false"
+                    android:progress="80"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 8. Value Bubble SeekBar with Custom Style -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Value Bubble SeekBar"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#FF5722"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Popup bubble showing real-time value (Drag to see)"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:paddingBottom="20dp"/>
+
+                <com.ext.advance_seekbar.AdvancedSeekBar
+                    android:id="@+id/bubbleSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="40dp"
+                    android:paddingBottom="20dp"
+                    app:trackColor="#E0E0E0"
+                    app:progressColor="#FF5722"
+                    app:progressColorEnd="#FF9800"
+                    app:trackThickness="14dp"
+                    app:min="0"
+                    app:max="100"
+                    app:step="1"
+                    app:thumbColor="#FF5722"
+
+                    app:showBubble="true"
+
+                  />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 9. Custom Colored Bubble Example -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Custom Bubble Design"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#9C27B0"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Purple bubble with yellow text (Drag to see)"
+                    android:textSize="12sp"
+                    android:textColor="#666666"
+                    android:paddingBottom="20dp"/>
+
+                <com.ext.advance_seekbar.AdvancedSeekBar
+                    android:id="@+id/customBubbleSeekBar"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:showBubble="true"
+                    app:trackThickness="14dp"
+                    app:bubbleBackgroundColor="#9C27B0"
+                    app:bubbleTextColor="#FF9800"
+                    app:bubbleTextSize="12sp"
+                    app:bubbleCornerRadius="16dp"
+                    app:bubbleWidth="40dp"
+                    app:bubbleHeight="30dp"
+                    app:min="0"
+                    app:max="100"
+                    app:step="5"
+                    app:thumbColor="#FF5722"
+                    app:progressColor="#FF9800"
+                    app:progressColorEnd="#FF5722"/>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
