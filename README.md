@@ -123,7 +123,7 @@ val currentProgress = seekBar.progress
 
 **RangeSeekBar**
 ```
-Kotlinval rangeSeekBar = findViewById<RangeSeekBar>(R.id.rangeSeekBar)
+val rangeSeekBar = findViewById<RangeSeekBar>(R.id.rangeSeekBar)
 
 val left = rangeSeekBar.leftProgress
 val right = rangeSeekBar.rightProgress
